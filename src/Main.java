@@ -1,12 +1,13 @@
-import jp.ac.uryukyu.ie.e215709.*;
 
 public class Main {
-  
-
     public static void main(String[] args){
      System.out.println("main method runs");
-     Chatbot bot1 = new Chatbot();
-     bot1.botName = "りんな";
+     ChatBot bot1 = new ChatBot("bot1");
+     ChatBot bot2 = new ChatBot("bot2");
+     bot1.greeting();
+     bot2.greeting();
+     bot2.name = "りんな";
+     bot2.greeting();
      
  }
 }
